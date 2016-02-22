@@ -37,9 +37,10 @@ require 'encrypted_strings'
 #
 # Find your app at https://developer.spotify.com/my-applications/#!/applications
 
-CLIENT_ID = "e6695c6d22214e0f832006889566df9c" # TODO: Get it from Spotify
-CLIENT_SECRET = "29eb02041ba646179a1189dccac112c7" # TODO: Get it from Spotify
-CLIENT_CALLBACK_URL = "spotifyiossdkexample://" # TODO: Get it from Spotify
+#Add these values to your heroku config vars
+CLIENT_ID = ENV['SPT_CLIENT_ID']
+CLIENT_SECRET = ENV['SPT_CLIENT_SECRET']
+CLIENT_CALLBACK_URL = ENV['SPT_CLIENT_CALLBACK_URL']
 
 # I don't think the secret should be changed...
 ENCRYPTION_SECRET = "cFJLyifeUJUBFWdHzVbykfDmPHtLKLGzViHW9aHGmyTLD8hGXC"
