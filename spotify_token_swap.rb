@@ -51,12 +51,13 @@ SPOTIFY_ACCOUNTS_ENDPOINT = URI.parse("https://accounts.spotify.com")
 #set :port, 1234 # Don't need on Heroku
 set :bind, '0.0.0.0' # IP address of the interface to listen on (all)
 
-puts CLIENT_ID
-puts CLIENT_SECRET
-puts CLIENT_CALLBACK_URL
+
 
 post '/swap' do
 
+    puts CLIENT_ID
+    puts CLIENT_SECRET
+    puts CLIENT_CALLBACK_URL
     # This call takes a single POST parameter, "code", which
     # it combines with your client ID, secret and callback
     # URL to get an OAuth token from the Spotify Auth Service,
