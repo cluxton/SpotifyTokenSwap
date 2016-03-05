@@ -3,6 +3,7 @@ Spotify Token Swap Service for Heroku
 
 To use the new [Spotify SDK](https://github.com/spotify/ios-sdk) we are required to run our own [Token Exchange Service](https://developer.spotify.com/technologies/spotify-ios-sdk/tutorial/#setting-up-your-token-exchange-service). This repository provides you with an easy installation on [Heroku](http://heroku.com/home). The current `CLIENT_ID`, `CLIENT_SECRET` and `CLIENT_CALLBACK_URL` are straight from [Spotifys Repo](https://github.com/spotify/ios-sdk/tree/master/Demo%20Projects) and work with their example apps. 
 
+<strong>Reason for forking: </strong> This fork was created to pull the client ID & secret from heroku environment variables (instead of hard coding them)
 
 Setup
 =======
